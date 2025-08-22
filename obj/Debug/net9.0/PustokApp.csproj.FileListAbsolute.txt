@@ -147,7 +147,6 @@ C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.csproj
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.RazorAssemblyInfo.cache
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.RazorAssemblyInfo.cs
-C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.sourcelink.json
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\scopedcss\bundle\PustokApp.styles.css
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\scopedcss\projectbundle\PustokApp.bundle.scp.css
@@ -225,4 +224,14 @@ C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\refint\PustokApp
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.pdb
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\PustokApp.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\ref\PustokApp.dll
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\2ur6kqg7v8-i0pxbf46sj.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\ws0mp9x2ut-xbeqx67jf4.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\c1vzd1rtmq-hpr7egv0en.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\cq15v09011-ecc2o9vt0s.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\w3ndu5kafv-nu28kqit8i.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\sp0f4culpi-5sm78wm4ln.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\1einttjxxt-qam996dp9n.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\nrcb8mpicj-ytnqdzmoai.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\bg09qv56kc-3lf3m66jgj.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\8td3msmwe7-hyivfevrtb.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
