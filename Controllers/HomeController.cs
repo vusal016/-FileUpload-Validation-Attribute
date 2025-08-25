@@ -13,7 +13,23 @@ namespace PustokApp.Controllers
         {
             HomeVm homevm = new()
             {
-                Sliders = pustokDb.Sliders.ToList()
+                Sliders = pustokDb.Sliders.ToList(),
+
+                FeaturedBooks=pustokDb.Books
+                .Include(b=>b.Author)
+                .Where(b=>b.IsFeatured)
+                .ToList(),  
+
+                NewBooks  =pustokDb.Books
+                .Include(b => b.Author)
+                .Where(b=>b.IsNew)
+                .ToList(),
+
+                DiscountBook=pustokDb.Books
+                .Include(b => b.Author)
+                .Where(b=>b.DiscountPercentage>0)
+                .ToList()
+              
             };
             return View(homevm);
         }
