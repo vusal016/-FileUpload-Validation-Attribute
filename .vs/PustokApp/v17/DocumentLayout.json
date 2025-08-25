@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|solutionrelative:views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|c:\\users\\user\\onedrive\\desktop\\pb305\\pustokapp\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|c:\\users\\user\\onedrive\\desktop\\pb305\\pustokapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|c:\\users\\user\\onedrive\\desktop\\pb305\\pustokapp\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84AA16CF-2EEB-4E74-9152-CE8B07AC2686}|PustokApp.csproj|c:\\users\\user\\onedrive\\desktop\\pb305\\pustokapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -104,14 +104,14 @@
               "RelativeDocumentMoniker": "Views\\Book\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Pb305\\PustokApp\\Views\\Book\\Index.cshtml",
               "RelativeToolTip": "Views\\Book\\Index.cshtml",
-              "ViewState": "AgIAALQAAAAAAAAAAAAgwAUBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowFkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-25T00:16:30.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Pb305\\PustokApp\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
@@ -119,8 +119,7 @@
               "RelativeToolTip": "Controllers\\BookController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T23:48:32.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-24T23:48:32.745Z"
             },
             {
               "$type": "Document",
@@ -132,18 +131,17 @@
               "RelativeToolTip": "Models\\Book.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T21:00:06.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T21:00:06.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Pb305\\PustokApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Pb305\\PustokApp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAiwHcBAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAowG0BAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-21T15:43:18.113Z",
               "EditorCaption": ""
@@ -206,8 +204,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T17:17:09.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T17:17:09.084Z"
             },
             {
               "$type": "Document",
@@ -219,8 +216,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:19:36.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:19:36.988Z"
             },
             {
               "$type": "Document",
@@ -232,8 +228,7 @@
               "RelativeToolTip": "ViewModels\\HomeVm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:18:11.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:18:11.461Z"
             },
             {
               "$type": "Document",
@@ -245,8 +240,7 @@
               "RelativeToolTip": "Data\\PustokDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwBAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T13:10:59.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T13:10:59.341Z"
             },
             {
               "$type": "Document",
@@ -258,8 +252,7 @@
               "RelativeToolTip": "Models\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T15:22:49.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T15:22:49.052Z"
             },
             {
               "$type": "Document",
@@ -283,8 +276,7 @@
               "RelativeToolTip": "Models\\BookImage.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T15:30:54.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T15:30:54.201Z"
             },
             {
               "$type": "Document",
