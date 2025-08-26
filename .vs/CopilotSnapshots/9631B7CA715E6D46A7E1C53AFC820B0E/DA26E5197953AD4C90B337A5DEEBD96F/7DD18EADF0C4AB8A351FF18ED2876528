@@ -1,0 +1,20 @@
+﻿@model List<Book>
+
+@if (Model != null && Model.Any())
+{
+    @foreach (var book in Model)
+    {
+        <div class="single-slide">
+            <div class="product-card">
+                <div class="product-header">
+                    <a href="#" class="author">
+                        @(book.Author?.Name ?? "Unknown Author")
+                    </a>
+                    <h3>
+                        <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.Id">
+                            @(book.Title ?? "Untitled")
+                        </a>
+                    </h3>
+                </div>
+                <div class="product-card--body">
+                    <div class="card-image
