@@ -1,0 +1,17 @@
+﻿@(document).ready(function ()) {
+    $(".bookModal").click(function ()
+        let url = $(this).attr("href");
+
+    fetch("")
+        .then(response => response.json())
+        .then(data =>){
+
+    }
+
+})
+    
+    
+    
+    
+
+    

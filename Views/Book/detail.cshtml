@@ -5,7 +5,7 @@
         <div class="breadcrumb-contents">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="detail.html">Home</a></li>
                     <li class="breadcrumb-item active">Product Details</li>
                 </ol>
             </nav>
@@ -52,13 +52,13 @@
                     }
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7">,
                 <div class="product-details-info pl-lg--30 ">
-                    <p class="tag-block">Tags: <a href="#">Movado</a>, <a href="#">Omega</a></p>
+                    <p class="tag-block">Tags: @(string.Join(',',Model.BookTags.Select(bt=>bt.Tag.Name)))</p>
                     <h3 class="product-title">@Model.Title</h3>
                     <ul class="list-unstyled">
                         <li>Ex Tax: <span class="list-value"> £60.24</span></li>
-                        <li>Genres: <a href="#" class="list-value font-weight-bold">@Model.Genre</a></li>
+                        <li>Genres: <a href="#" class="list-value font-weight-bold">@Model.Genre.Name</a></li>
                         <li>Product Code: <span class="list-value">@Model.Code</span></li>
                         <li>Reward Points: <span class="list-value"> 200</span></li>
                         <li>Availability: <span class="list-value">@(Model.InStock?"In Stock":"Out of Stock")</span></li>
@@ -244,3 +244,4 @@
           </section>
         </div> -->
     </div>
+    </main>
