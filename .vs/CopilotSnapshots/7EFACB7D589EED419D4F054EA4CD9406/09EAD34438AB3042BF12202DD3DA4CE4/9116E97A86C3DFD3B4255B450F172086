@@ -1,0 +1,21 @@
+﻿$(document).ready(function () {
+    $(".bookModal").click(function (ev) {
+        ev.preventDefault();
+        let url = $(this).attr("href");
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                $("#quickModal .modal-dialog").html(data);
+
+                //// Show modal using Bootstrap method
+                $("#quickModal").show()
+            })
+    });
+});
+

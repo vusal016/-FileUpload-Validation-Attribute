@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using PustokApp.Data;
+using PustokApp.Profiles;
 
 namespace PustokApp
 {
@@ -13,7 +15,8 @@ namespace PustokApp
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<PustokDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-
+            builder.Services.AddAutoMapper(opt => { }, typeof(MapperProfile).Assembly);    
+           
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

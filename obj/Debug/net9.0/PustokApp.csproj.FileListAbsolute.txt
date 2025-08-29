@@ -343,4 +343,5 @@ C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\tr\Microsoft.Cod
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\itsweojslz-cg7pxo5ph2.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\ovt59pshhi-9pe70a9jpx.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\AutoMapper.dll
