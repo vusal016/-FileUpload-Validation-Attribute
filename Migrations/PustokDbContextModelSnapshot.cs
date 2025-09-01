@@ -35,7 +35,7 @@ namespace PustokApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.Book", b =>
@@ -103,7 +103,7 @@ namespace PustokApp.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.BookImage", b =>
@@ -124,7 +124,7 @@ namespace PustokApp.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookImages");
+                    b.ToTable("BookImages", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.BookTag", b =>
@@ -139,7 +139,7 @@ namespace PustokApp.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("BookTags");
+                    b.ToTable("BookTags", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.Genre", b =>
@@ -151,11 +151,26 @@ namespace PustokApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres");
+                    b.ToTable("Genres", (string)null);
+                });
+
+            modelBuilder.Entity("PustokApp.Models.Settings", b =>
+                {
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Key");
+
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.Slider", b =>
@@ -186,7 +201,7 @@ namespace PustokApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.Tag", b =>
@@ -203,7 +218,7 @@ namespace PustokApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("PustokApp.Models.Book", b =>

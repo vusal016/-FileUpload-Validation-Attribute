@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using PustokApp.Services
+@inject LayoutService layout
+@{
+    var settings = layout.GetStrings();
+}
+<!DOCTYPE html>
 <html lang="zxx">
 
 <!-- Mirrored from htmldemo.net/pustok/pustok/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 07:31:47 GMT -->
@@ -21,7 +26,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 ">
                             <a href="index.html" class="site-brand">
-                                <img src="~/assets/image/logo.png" alt="">
+                                <img src="~/assets/image/@settings.FirstOrDefault(l =>l.Key=="logo").Value" alt="">
                             </a>
                         </div>
                         <div class="col-lg-3">
@@ -706,7 +711,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4">
                         <a href="index.html" class="site-brand">
-                            <img src="~/assets/image/logo.png" alt="">
+                            <img src="~/assets/image/@settings.FirstOrDefault(s =>s.Key=="Logo").Value" alt="">
                         </a>
                     </div>
                     <div class="col-lg-8">
@@ -916,8 +921,8 @@
                                     USA
                                 </span>
                             </p>
-                            <p><span class="label">Phone:</span><span class="text">+18088 234 5678</span></p>
-                            <p><span class="label">Email:</span><span class="text">suport@hastech.com</span></p>
+                            <p><span class="label">Phone:</span><span class="text">@settings.FirstOrDefault(e => e.Key == "phone").Value</span></p>
+                            <p><span class="label">Email:</span><span class="text">@settings.FirstOrDefault(e =>e.Key=="email ").Value</span></p>
                         </div>
                     </div>
                 </div>
