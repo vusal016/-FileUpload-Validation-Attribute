@@ -1,0 +1,60 @@
+﻿@model List<Slider>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Slider</h2>
+        </div>
+    </div>
+    <div class="col-md-6 text-end">
+        <a asp-area="Manage" asp-controller="Slider" asp-action="Create" class="btn btn-sm btn-info">Create New Slider</a>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Titles</th>
+                    <th scope="col">Desc</th>
+                    <th scope="col">ButtonText</th>
+                    <th scope="col">ButtonLink</th>
+                    <th scope="col">Order</th>
+                    <th scope="col">Handle</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var slider in Model)
+                {
+                    <tr>
+                        <td>
+                            <img width="100" height="100" src="~/assets/image/bg-images/@slider.ImageUrl" alt="Slider Image" />
+                             
+                        <td>
+                        <td>@slider.Title</td>
+                        <td>@slider.Description</td>
+                        <td>@slider.ButtonText</td>
+                        <td>@slider.ButtonLInk</td>
+                        <td>@slider.Order</td>
+                        <td>@slider.</td>
+                  
+                        <td>
+                            <a asp-area="Manage" asp-controller="slider" asp-action="Edit" asp-route-id="@slider.Id" class="btn btn-sm btn-info">Edit</a>
+                            <a asp-area="Manage" asp-controller="slider" asp-action="detail" asp-route-id="@slider.Id" class="btn btn-sm btn-info">Detail</a>
+                            <a asp-area="Manage" asp-controller="slider" asp-action="Delete" asp-route-id="@slider.Id" class="btn btn-sm btn-info delete">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+

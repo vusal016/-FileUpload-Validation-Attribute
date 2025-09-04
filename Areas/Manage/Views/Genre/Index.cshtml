@@ -23,9 +23,9 @@
                     <tr>
                         <td>@genre.Name</td>
                         <td>
-                            <a asp asp-area="Manage" asp-controller="Genre" asp-action="Edit" asp-route-id="@genre.Id" class="btn btn-sm btn-info">Edit</a>
-                            <a asp asp-area="Manage" asp-controller="Genre" asp-action="detail" asp-route-id="@genre.Id" class="btn btn-sm btn-info">Delete</a>
-                            <a asp asp-area="Manage" asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.Id" class="btn btn-sm btn-info">Detail</a>
+                            <a asp-area="Manage" asp-controller="Genre" asp-action="Edit" asp-route-id="@genre.Id" class="btn btn-sm btn-info">Edit</a>
+                            <a asp-area="Manage" asp-controller="Genre" asp-action="detail" asp-route-id="@genre.Id" class="btn btn-sm btn-info">Detail</a>
+                            <a asp-area="Manage" asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.Id" class="btn btn-sm btn-info delete">Delete</a>
                         </td>
                     </tr>
                 }
@@ -35,6 +35,56 @@
         </table>
     </div>
 </div>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $('.delete').click(function (e) {
+                e.preventDefault();
+
+                var url = $(this).attr('href'); // məsələn: genre/delete/2
+
+                Swal.fire({
+                    title: "Silmək istədiyinizdən əminsinizmi?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Bəli, sil",
+                    cancelButtonText: "Xeyr"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        fetch(url)
+                            .then(res => {
+                                if (res.ok) {
+                                    Swal.fire({
+                                        title: "Silindi!",
+                                        text: "Məlumat uğurla silindi.",
+                                        icon: "success"
+                                    }).then(() => {
+                                        location.reload();
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        title: "Xəta!",
+                                        text: "Silinmə zamanı problem baş verdi.",
+                                        icon: "error"
+                                    });
+                                }
+                            })
+                            .catch(err => {
+                                Swal.fire({
+                                    title: "Xəta!",
+                                    text: "Server ilə əlaqə alınmadı.",
+                                    icon: "error"
+                                });
+                                console.error(err);
+                            });
+                    }
+                });
+            });
+        });
+    </script>
+}
+
 
 
 

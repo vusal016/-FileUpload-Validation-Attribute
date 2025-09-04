@@ -25,58 +25,22 @@ namespace PustokApp.Areas.Manage.Controllers
             if (pustokDb.Genres.Any(n => n.Name.ToLower() == genre.Name.ToLower()))
             {
                 ModelState.AddModelError("Name", "This genre already exists");
-                return View();
+            return View();
             }
             pustokDb.Genres.Add(genre);
             pustokDb.SaveChanges();
             return RedirectToAction(nameof(Index));
 
         }
-    public IActionResult Delete(int id) 
+    public IActionResult Delete(int id)
         {
             var genre = pustokDb.Genres.Find(id);
             if (genre == null)
                 return NotFound();
             pustokDb.Genres.Remove(genre);
             pustokDb.SaveChanges();
-            return Ok();
-        }
-        public IActionResult Edit(int id)
-        {
-            var genre = pustokDb.Genres.Find(id);
-            if (genre == null)
-                return NotFound();
-         
-            return View(genre);
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(Genre genre)
-        {
-            if (!ModelState.IsValid)
-                return View();
-            var existGenre = pustokDb.Genres.Find(genre.Id);
-            if (existGenre == null) return NotFound();
-            if (pustokDb.Genres.Any(g => g.Name.ToLower() == genre.Name.ToLower()))
-            {
-                ModelState.AddModelError("Name", "This genre already exist");
-                return View();
-            }
-            existGenre.Name = genre.Name;
-            pustokDb.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult Detail(int id)
-        {
-            var genre = pustokDb.Genres.Find(id);
-            if (genre == null)
-                return NotFound();
-            return View(genre);
-        }
-
     }
 }
-
-            
-
 

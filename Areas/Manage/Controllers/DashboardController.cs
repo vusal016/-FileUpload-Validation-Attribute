@@ -2,9 +2,9 @@
 
 namespace PustokApp.Areas.Manage.Controllers
 {
+    [Area("Manage")]
     public class DashboardController : Controller
     {
-        [Area("Manage")]
         public IActionResult Index()
         {
             return View();
