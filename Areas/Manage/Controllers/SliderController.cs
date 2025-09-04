@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PustokApp.Data;
+using PustokApp.Models;
 
 namespace PustokApp.Areas.Manage.Controllers
 {
@@ -11,5 +12,20 @@ namespace PustokApp.Areas.Manage.Controllers
             var sliders = pustokDb.Sliders.ToList();
             return View(sliders);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPut]
+        public IActionResult Create(Slider slider)
+        {
+            if (!ModelState.IsValid)
+                return View();
+            pustokDb.Sliders.Add(slider);
+            pustokDb.SaveChanges();
+            return RedirectToAction("index");
+                
+        }
+
     }
 }
