@@ -344,7 +344,6 @@ C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\zh-Hans\Microsof
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\ovt59pshhi-9pe70a9jpx.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\bin\Debug\net9.0\AutoMapper.dll
-C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\z9dxoedc9k-r3unjvhb45.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\lu67lvh7dr-02037ac2e4.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\nk71ek4o8t-40226ad91u.gz
@@ -2035,3 +2034,4 @@ C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\h4o4h
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\9eijhe1zml-33z6q9z31h.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\dabnfuu89i-rszun4iext.gz
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\compressed\3xvddt9yzt-l5o0ocrnlv.gz
+C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
