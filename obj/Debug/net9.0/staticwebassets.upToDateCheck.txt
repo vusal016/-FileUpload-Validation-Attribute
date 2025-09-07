@@ -2021,6 +2021,8 @@ wwwroot\admin\vendor\jquery\jquery.slim.min.js
 wwwroot\admin\vendor\jquery\jquery.slim.min.map
 wwwroot\assets\image\bg-images\d2d6d7a5-1c1a-4656-b4ce-35622935a1fe.jpg
 wwwroot\assets\ccfb9912-0cf3-4198-9d42-ead4abb324e5.jpg
+wwwroot\assets\f05b3102-f540-4b36-911c-240681f89453.jpg
+wwwroot\assets\353c486f-b1ad-410a-91c8-82517501b52a.png
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\wwwroot\css\site.css
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\wwwroot\favicon.ico
 C:\Users\User\OneDrive\Desktop\Pb305\PustokApp\wwwroot\js\site.js

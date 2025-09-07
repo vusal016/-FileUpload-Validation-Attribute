@@ -1,0 +1,26 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PustokApp.Attributes
+{
+    public class ContentTypeAttribute:ValidationAttribute
+    {
+        private readonly string[] _allowTypes;
+        public ContentTypeAttribute(params string[]allowedTypes)
+        {
+            _allowTypes = allowedTypes; 
+        }
+        protected override ValidationResult Isvalid(object value, ValidationContext validationContext)
+        {
+            var file = value as IFormFile;
+            if (file != null)
+            {
+                if (!_allowTypes.Contains(file.ContentType))
+                {
+                    return new ValidationResult($"File Type must be one of the following:{string.Join(",",  _allowedTypes)}.");
+                }
+            }
+        }
+           
+
+    }
+}

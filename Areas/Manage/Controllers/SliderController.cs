@@ -28,16 +28,8 @@ namespace PustokApp.Areas.Manage.Controllers
                 ModelState.AddModelError("File", "Image is required");
                 return View();
             }
-            if (!file.CheckContentType("image/"))
-            {
-                ModelState.AddModelError("File", "File must be image");
-                return View();  
-            }
-            if (!file.CheckFileSize(2))
-            {
-                ModelState.AddModelError("File", "Image size must be max 2MB");
-                return View();
-            }
+       
+           
     
             slider.ImageUrl = file.SaveFile("image/bg-image");
       
@@ -71,17 +63,6 @@ namespace PustokApp.Areas.Manage.Controllers
             var file = slider.File;
             if (file != null)
             {
-                if (!file.CheckContentType("image/"))
-                {
-                    ModelState.AddModelError("File", "file must be image");
-                    return View();
-                }
-                if (!file.CheckFileSize(2))
-                {
-                    ModelState.AddModelError("file", "Image size must be max 2MB");
-                    return View();
-
-                }
                 FileManager.DeleteFile("image/bg-images", existSlider.ImageUrl);
                 existSlider.ImageUrl = file.SaveFile("image/bg-images");
 
@@ -93,7 +74,7 @@ namespace PustokApp.Areas.Manage.Controllers
             existSlider.Order = slider.Order;
 
             pustokDb.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index");   
 
         }
     }

@@ -1,4 +1,6 @@
-﻿using PustokApp.Models.Common;
+﻿
+using PustokApp.Attributes;
+using PustokApp.Models.Common;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -16,7 +18,10 @@ namespace PustokApp.Models
         public string ButtonLInk { get; set; }
         public int Order { get; set; }
         [NotMapped]
-        public IFormFile File { get; set; }
+        [FileLength(2)]
+        [ContentType("image/jpeg" ,"image/png")]
+        public IFormFile File { get ; set; }
 
     }
+  
 }
